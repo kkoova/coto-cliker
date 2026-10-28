@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://b11w3omhx4wk3"]
+
+[ext_resource type="Theme" uid="uid://o8xmkolrgdpq" path="res://assets/theme.tres" id="1_3ildr"]
+[ext_resource type="Script" uid="uid://b6htk1wb4g1e" path="res://scripts/float.gd" id="2_gliwu"]
+
+[node name="Float" type="Label" unique_id=1627574646]
+offset_right = 19.0
+offset_bottom = 23.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource("1_3ildr")
+text = "+1"
+script = ExtResource("2_gliwu")

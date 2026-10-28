@@ -1,0 +1,288 @@
+[gd_scene format=4 uid="uid://dirjiqr451px0"]
+
+[ext_resource type="Theme" uid="uid://o8xmkolrgdpq" path="res://assets/theme.tres" id="1_lx5au"]
+[ext_resource type="Script" uid="uid://bi84jcop0htja" path="res://scripts/shop.gd" id="2_1l46r"]
+[ext_resource type="Texture2D" uid="uid://dulyhav822i0u" path="res://assets/Sprite sheet for Basic Pack.png" id="2_xfvoa"]
+[ext_resource type="TileSet" uid="uid://c7g4jxrh75e1i" path="res://assets/new_tile_set.tres" id="3_032fp"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_1l46r"]
+load_path = "res://.godot/imported/Sprite sheet for Basic Pack.png-eabe7b01c3a789601ffb6404d896cf0e.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_032fp"]
+atlas = SubResource("CompressedTexture2D_1l46r")
+region = Rect2(552, 155, 35, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q3xpp"]
+atlas = ExtResource("2_xfvoa")
+region = Rect2(690, 194, 12, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r7sum"]
+atlas = ExtResource("2_xfvoa")
+region = Rect2(628, 83, 7, 9)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_032fp"]
+load_path = "res://.godot/imported/Sprite sheet for Basic Pack.png-eabe7b01c3a789601ffb6404d896cf0e.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2fc2m"]
+atlas = SubResource("CompressedTexture2D_032fp")
+region = Rect2(627, 209, 10, 14)
+
+[node name="Shop" type="Control" unique_id=982983731 node_paths=PackedStringArray("coin_label", "upgrade_container")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_lx5au")
+script = ExtResource("2_1l46r")
+coin_label = NodePath("MarginContainer/VBoxContainer/HBoxContainer2/Panel/CoinLabel")
+upgrade_container = NodePath("MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer")
+
+[node name="Back" type="TileMapLayer" parent="." unique_id=259727261]
+tile_map_data = PackedByteArray("AAAAAAAAAAABABUAAAABAAAAAAAAAA8AAAACAAAAAAAIAA4AAAADAAAAAAABABMAAAAEAAAAAAAAABgAAAAFAAAAAAABAA4AAAAGAAAAAAAAABgAAAAGAAEAAAAAABIAAAAHAAEAAAABABUAAAAHAAAAAAABABQAAAAFAAEAAAAAABYAAAAEAAEAAAAAABcAAAADAAEAAAAFABMAAAACAAEAAAABABMAAAABAAEAAAAGAA8AAAAAAAEAAAABABgAAAD//wEAAAAAABgAAAD//wIAAAAIAA4AAAAAAAIAAAABABcAAAABAAIAAAAAABEAAAACAAIAAAABABcAAAADAAIAAAAAABMAAAAEAAIAAAAAABAAAAAFAAIAAAAIABUAAAAGAAIAAAAJABUAAAAHAAIAAAAAAA0AAAAHAAMAAAAFABMAAAAGAAMAAAAJABYAAAAFAAMAAAAIABYAAAAEAAMAAAAAABUAAAADAAMAAAABABEAAAACAAMAAAABAA8AAAABAAMAAAAIABAAAAAAAAMAAAABABEAAAD//wMAAAABABIAAAD//wQAAAAAABIAAAAAAAQAAAAGABEAAAABAAQAAAAAAA4AAAACAAQAAAABABYAAAADAAQAAAAAABIAAAAEAAQAAAAJABgAAAAFAAQAAAAIABgAAAAGAAQAAAABABQAAAAHAAQAAAAAABYAAAAHAAUAAAAJABcAAAAGAAUAAAABAA0AAAAFAAUAAAAAABQAAAAEAAUAAAABABgAAAADAAUAAAAAABIAAAACAAUAAAAAABEAAAABAAUAAAAAAA0AAAAAAAUAAAABABEAAAD//wUAAAAFABMAAAD//wYAAAABABIAAAAAAAYAAAAEABIAAAABAAYAAAAAABQAAAACAAYAAAABABcAAAADAAYAAAAAAA0AAAAEAAYAAAAAABMAAAAFAAYAAAABABUAAAAGAAYAAAABAA0AAAAHAAYAAAAAABgAAAAHAAcAAAAAAA8AAAAGAAcAAAABAA0AAAAFAAcAAAABABIAAAAEAAcAAAAAABEAAAADAAcAAAAAABYAAAACAAcAAAABABEAAAABAAcAAAABABQAAAAAAAcAAAAAAA0AAAD//wcAAAAAABUAAAD//wAAAAAAABgAAAD//wgAAAAAABIAAAD//wkAAAAFABMAAAD//woAAAABABYAAAD//wsAAAABABEAAAD//wwAAAABAA0AAAD//w0AAAAAABgAAAAAAAgAAAAFABMAAAAAAAkAAAAEABcAAAAAAAoAAAAJABgAAAAAAAsAAAACABUAAAAAAAwAAAACABYAAAAAAA0AAAABABYAAAABAAgAAAAAABIAAAABAAkAAAABABQAAAABAAoAAAAAAA0AAAABAAsAAAADABUAAAABAAwAAAADABYAAAABAA0AAAABAA4AAAACAAgAAAAAAA8AAAACAAkAAAABAA4AAAACAAoAAAABAA4AAAACAAsAAAAAABQAAAACAAwAAAAAABgAAAACAA0AAAAAABMAAAADAAgAAAABABgAAAADAAkAAAAAABgAAAADAAoAAAABAA4AAAADAAsAAAABAA8AAAADAAwAAAABABUAAAADAA0AAAAJAA0AAAAEAAgAAAAAAA8AAAAEAAkAAAABABgAAAAEAAoAAAABABIAAAAEAAsAAAAAABgAAAAEAAwAAAAEABIAAAAEAA0AAAAFABcAAAAFAAgAAAABABMAAAAFAAkAAAABABEAAAAFAAoAAAABABEAAAAFAAsAAAABABgAAAAFAAwAAAAFABMAAAAFAA0AAAABABEAAAAGAAgAAAAEABIAAAAGAAkAAAABABUAAAAGAAoAAAABAA4AAAAGAAsAAAAIABAAAAAGAAwAAAAJAA0AAAAGAA0AAAABABQAAAAHAAgAAAABAA0AAAAHAAkAAAAAABIAAAAHAAoAAAAAABUAAAAHAAsAAAAAABMAAAAHAAwAAAAAAA8AAAAHAA0AAAAHABIAAAA=")
+tile_set = ExtResource("3_032fp")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=788972396]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=411023656]
+layout_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=901262543]
+layout_mode = 2
+
+[node name="DownButton" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer2" unique_id=680194333]
+custom_minimum_size = Vector2(20, 21)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_type_variation = &"DownButton"
+
+[node name="Panel" type="Control" parent="MarginContainer/VBoxContainer/HBoxContainer2" unique_id=1773390]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="CoinTextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer2/Panel" unique_id=381248169]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -35.0
+offset_bottom = 17.0
+grow_horizontal = 0
+texture = SubResource("AtlasTexture_032fp")
+stretch_mode = 2
+
+[node name="CoinLabel" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer2/Panel" unique_id=1492141904]
+layout_mode = 0
+offset_left = 60.0
+offset_right = 78.0
+offset_bottom = 15.0
+text = "0"
+horizontal_alignment = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/VBoxContainer" unique_id=1424995610]
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 3
+vertical_scroll_mode = 3
+
+[node name="ShopBuyVBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/ScrollContainer" unique_id=1084733646]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="OneUpdateHBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer" unique_id=1710094981]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer/OneUpdateHBoxContainer" unique_id=1139828510]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = SubResource("AtlasTexture_q3xpp")
+stretch_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer/OneUpdateHBoxContainer" unique_id=764222484]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"ShopPanel"
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer/OneUpdateHBoxContainer/PanelContainer" unique_id=553257406]
+layout_mode = 2
+text = "2з/тап"
+
+[node name="OneLevelCoinButton" type="Button" parent="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer/OneUpdateHBoxContainer" unique_id=404915332]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "30"
+icon = SubResource("AtlasTexture_r7sum")
+
+[node name="TwoUpdateHBoxContainer2" type="HBoxContainer" parent="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer" unique_id=113723341]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer/TwoUpdateHBoxContainer2" unique_id=376569832]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = SubResource("AtlasTexture_q3xpp")
+stretch_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer/TwoUpdateHBoxContainer2" unique_id=1300473688]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"ShopPanel"
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer/TwoUpdateHBoxContainer2/PanelContainer" unique_id=1252017185]
+layout_mode = 2
+text = "4з/тап"
+
+[node name="TwoLevelCoinButton" type="Button" parent="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer/TwoUpdateHBoxContainer2" unique_id=1258920142]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "100"
+icon = SubResource("AtlasTexture_r7sum")
+
+[node name="AutoUpdateHBoxContainer4" type="HBoxContainer" parent="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer" unique_id=1659753066]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer/AutoUpdateHBoxContainer4" unique_id=636144057]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = SubResource("AtlasTexture_2fc2m")
+stretch_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer/AutoUpdateHBoxContainer4" unique_id=1571268898]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"ShopPanel"
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer/AutoUpdateHBoxContainer4/PanelContainer" unique_id=570302537]
+layout_mode = 2
+text = "авто 3"
+
+[node name="AutoLevelCoinButton" type="Button" parent="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer/AutoUpdateHBoxContainer4" unique_id=1773325393]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "150"
+icon = SubResource("AtlasTexture_r7sum")
+
+[node name="TreeUpdateHBoxContainer3" type="HBoxContainer" parent="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer" unique_id=493339696]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer/TreeUpdateHBoxContainer3" unique_id=966094135]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = SubResource("AtlasTexture_q3xpp")
+stretch_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer/TreeUpdateHBoxContainer3" unique_id=1515375595]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"ShopPanel"
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer/TreeUpdateHBoxContainer3/PanelContainer" unique_id=2037415015]
+layout_mode = 2
+text = "6з/тап"
+
+[node name="TreeLevelCoinButton" type="Button" parent="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer/TreeUpdateHBoxContainer3" unique_id=1111434906]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "250"
+icon = SubResource("AtlasTexture_r7sum")
+
+[node name="TreeUpdateHBoxContainer4" type="HBoxContainer" parent="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer" unique_id=692173149]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer/TreeUpdateHBoxContainer4" unique_id=837229292]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = SubResource("AtlasTexture_q3xpp")
+stretch_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer/TreeUpdateHBoxContainer4" unique_id=1894962101]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"ShopPanel"
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer/TreeUpdateHBoxContainer4/PanelContainer" unique_id=2069720329]
+layout_mode = 2
+text = "6з/тап"
+
+[node name="TreeLevelCoinButton" type="Button" parent="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer/TreeUpdateHBoxContainer4" unique_id=1862114647]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "250"
+icon = SubResource("AtlasTexture_r7sum")
+
+[node name="TreeUpdateHBoxContainer5" type="HBoxContainer" parent="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer" unique_id=1848846826]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer/TreeUpdateHBoxContainer5" unique_id=1118435817]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = SubResource("AtlasTexture_q3xpp")
+stretch_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer/TreeUpdateHBoxContainer5" unique_id=1075006193]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"ShopPanel"
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer/TreeUpdateHBoxContainer5/PanelContainer" unique_id=732783298]
+layout_mode = 2
+text = "6з/тап"
+
+[node name="TreeLevelCoinButton" type="Button" parent="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer/TreeUpdateHBoxContainer5" unique_id=1365907381]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "250"
+icon = SubResource("AtlasTexture_r7sum")
+
+[node name="TreeUpdateHBoxContainer6" type="HBoxContainer" parent="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer" unique_id=872202924]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer/TreeUpdateHBoxContainer6" unique_id=1470513330]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = SubResource("AtlasTexture_q3xpp")
+stretch_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer/TreeUpdateHBoxContainer6" unique_id=2027670756]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"ShopPanel"
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer/TreeUpdateHBoxContainer6/PanelContainer" unique_id=1715368642]
+layout_mode = 2
+text = "6з/тап"
+
+[node name="TreeLevelCoinButton" type="Button" parent="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer/TreeUpdateHBoxContainer6" unique_id=978721279]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "250"
+icon = SubResource("AtlasTexture_r7sum")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer" parent="." unique_id=1490076271]
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer2/DownButton" to="." method="_on_down_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer/OneUpdateHBoxContainer/OneLevelCoinButton" to="." method="_on_tree_level_coin_button_pressed" binds= [NodePath("MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer/OneUpdateHBoxContainer/OneLevelCoinButton"), 30, 2]]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer/TwoUpdateHBoxContainer2/TwoLevelCoinButton" to="." method="_on_tree_level_coin_button_pressed" binds= [NodePath("MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer/TwoUpdateHBoxContainer2/TwoLevelCoinButton"), 100, 4]]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer/AutoUpdateHBoxContainer4/AutoLevelCoinButton" to="." method="_on_auto_level_coin_button_pressed" binds= [NodePath("MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer/AutoUpdateHBoxContainer4/AutoLevelCoinButton")]]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer/TreeUpdateHBoxContainer3/TreeLevelCoinButton" to="." method="_on_tree_level_coin_button_pressed" binds= [NodePath("MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer/TreeUpdateHBoxContainer3/TreeLevelCoinButton"), 250, 6]]

@@ -1,0 +1,296 @@
+[gd_scene format=4 uid="uid://dmmnobjt630ii"]
+
+[ext_resource type="Theme" uid="uid://o8xmkolrgdpq" path="res://assets/theme.tres" id="1_jyhfs"]
+[ext_resource type="Texture2D" uid="uid://dulyhav822i0u" path="res://assets/Sprite sheet for Basic Pack.png" id="1_sugp2"]
+[ext_resource type="Script" uid="uid://cbthpvo54lx1e" path="res://scripts/main.gd" id="3_jyhfs"]
+[ext_resource type="Texture2D" uid="uid://c1snv3xn5o33a" path="res://assets/Teemo Basic emote animations sprite sheet.png" id="3_tbgi4"]
+[ext_resource type="TileSet" uid="uid://c7g4jxrh75e1i" path="res://assets/new_tile_set.tres" id="4_tefeu"]
+[ext_resource type="AudioStream" uid="uid://bo0nyhfgkkyio" path="res://assets/blup_1.wav" id="5_tbgi4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r7sum"]
+atlas = ExtResource("1_sugp2")
+region = Rect2(581, 68, 7, 7)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q3xpp"]
+atlas = ExtResource("1_sugp2")
+region = Rect2(552, 131, 35, 41)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tipki"]
+atlas = ExtResource("3_tbgi4")
+region = Rect2(0, 192, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ya4ey"]
+atlas = ExtResource("3_tbgi4")
+region = Rect2(32, 192, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eb6dy"]
+atlas = ExtResource("3_tbgi4")
+region = Rect2(0, 224, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_trceg"]
+atlas = ExtResource("3_tbgi4")
+region = Rect2(32, 224, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pm3ni"]
+atlas = ExtResource("3_tbgi4")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a8y0u"]
+atlas = ExtResource("3_tbgi4")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jkv2x"]
+atlas = ExtResource("3_tbgi4")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jbj1t"]
+atlas = ExtResource("3_tbgi4")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_muem4"]
+atlas = ExtResource("3_tbgi4")
+region = Rect2(96, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dp3eg"]
+atlas = ExtResource("3_tbgi4")
+region = Rect2(128, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0ld40"]
+atlas = ExtResource("3_tbgi4")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gqmmt"]
+atlas = ExtResource("3_tbgi4")
+region = Rect2(32, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yc10j"]
+atlas = ExtResource("3_tbgi4")
+region = Rect2(64, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jscy8"]
+atlas = ExtResource("3_tbgi4")
+region = Rect2(96, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y6deb"]
+atlas = ExtResource("3_tbgi4")
+region = Rect2(0, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_og1vs"]
+atlas = ExtResource("3_tbgi4")
+region = Rect2(32, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2wyq8"]
+atlas = ExtResource("3_tbgi4")
+region = Rect2(0, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vxglm"]
+atlas = ExtResource("3_tbgi4")
+region = Rect2(32, 160, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_q3xpp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tipki")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ya4ey")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eb6dy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_trceg")
+}],
+"loop": 0,
+"name": &"happy",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pm3ni")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a8y0u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jkv2x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jbj1t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_muem4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dp3eg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0ld40")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gqmmt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yc10j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jscy8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pm3ni")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pm3ni")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pm3ni")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y6deb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_og1vs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2wyq8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vxglm")
+}],
+"loop": 0,
+"name": &"love",
+"speed": 5.0
+}]
+
+[node name="Control" type="Control" unique_id=572347595 node_paths=PackedStringArray("coins_label", "anim", "level_ui", "timer_coin", "click_sound")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_jyhfs")
+script = ExtResource("3_jyhfs")
+coins_label = NodePath("MarginContainer/VBoxContainer/HBoxContainer/CoinsLabel")
+anim = NodePath("MarginContainer/VBoxContainer/Panel/AnimatedSprite2D")
+level_ui = NodePath("MarginContainer/VBoxContainer/HBoxContainer/LevelHBoxContainer")
+level_ui_texture = SubResource("AtlasTexture_r7sum")
+timer_coin = NodePath("Timer")
+click_sound = NodePath("AudioStreamPlayer2D")
+
+[node name="Back" type="TileMapLayer" parent="." unique_id=431479226]
+tile_map_data = PackedByteArray("AAAAAAAAAAABABUAAAABAAAAAAAAAA8AAAACAAAAAAAIAA4AAAADAAAAAAABABMAAAAEAAAAAAAAABgAAAAFAAAAAAABAA4AAAAGAAAAAAAAABgAAAAGAAEAAAAAABIAAAAHAAEAAAABABUAAAAHAAAAAAABABQAAAAFAAEAAAAAABYAAAAEAAEAAAAAABcAAAADAAEAAAAFABMAAAACAAEAAAABABMAAAABAAEAAAAGAA8AAAAAAAEAAAABABgAAAD//wEAAAAAABgAAAD//wIAAAAIAA4AAAAAAAIAAAABABcAAAABAAIAAAAAABEAAAACAAIAAAABABcAAAADAAIAAAAAABMAAAAEAAIAAAAAABAAAAAFAAIAAAAIABUAAAAGAAIAAAAJABUAAAAHAAIAAAAAAA0AAAAHAAMAAAAFABMAAAAGAAMAAAAJABYAAAAFAAMAAAAIABYAAAAEAAMAAAAAABUAAAADAAMAAAABABEAAAACAAMAAAABAA8AAAABAAMAAAAIABAAAAAAAAMAAAABABEAAAD//wMAAAABABIAAAD//wQAAAAAABIAAAAAAAQAAAAGABEAAAABAAQAAAAAAA4AAAACAAQAAAABABYAAAADAAQAAAAAABIAAAAEAAQAAAAJABgAAAAFAAQAAAAIABgAAAAGAAQAAAABABQAAAAHAAQAAAAAABYAAAAHAAUAAAAJABcAAAAGAAUAAAABAA0AAAAFAAUAAAAAABQAAAAEAAUAAAABABgAAAADAAUAAAAAABIAAAACAAUAAAAAABEAAAABAAUAAAAAAA0AAAAAAAUAAAABABEAAAD//wUAAAAFABMAAAD//wYAAAABABIAAAAAAAYAAAAEABIAAAABAAYAAAAAABQAAAACAAYAAAABABcAAAADAAYAAAAAAA0AAAAEAAYAAAAAABMAAAAFAAYAAAABABUAAAAGAAYAAAABAA0AAAAHAAYAAAAAABgAAAAHAAcAAAAAAA8AAAAGAAcAAAABAA0AAAAFAAcAAAABABIAAAAEAAcAAAAAABEAAAADAAcAAAAAABYAAAACAAcAAAABABEAAAABAAcAAAABABQAAAAAAAcAAAAAAA0AAAD//wcAAAAAABUAAAD//wAAAAAAABgAAAD//wgAAAAAABIAAAD//wkAAAAFABMAAAD//woAAAABABYAAAD//wsAAAABABEAAAD//wwAAAABAA0AAAD//w0AAAAAABgAAAAAAAgAAAAFABMAAAAAAAkAAAAEABcAAAAAAAoAAAAJABgAAAAAAAsAAAACABUAAAAAAAwAAAACABYAAAAAAA0AAAABABYAAAABAAgAAAAAABIAAAABAAkAAAABABQAAAABAAoAAAAAAA0AAAABAAsAAAADABUAAAABAAwAAAADABYAAAABAA0AAAABAA4AAAACAAgAAAAAAA8AAAACAAkAAAABAA4AAAACAAoAAAABAA4AAAACAAsAAAAAABQAAAACAAwAAAAAABgAAAACAA0AAAAAABMAAAADAAgAAAABABgAAAADAAkAAAAAABgAAAADAAoAAAABAA4AAAADAAsAAAABAA8AAAADAAwAAAABABUAAAADAA0AAAAJAA0AAAAEAAgAAAAAAA8AAAAEAAkAAAABABgAAAAEAAoAAAABABIAAAAEAAsAAAAAABgAAAAEAAwAAAAEABIAAAAEAA0AAAAFABcAAAAFAAgAAAABABMAAAAFAAkAAAABABEAAAAFAAoAAAABABEAAAAFAAsAAAABABgAAAAFAAwAAAAFABMAAAAFAA0AAAABABEAAAAGAAgAAAAEABIAAAAGAAkAAAABABUAAAAGAAoAAAABAA4AAAAGAAsAAAAIABAAAAAGAAwAAAAJAA0AAAAGAA0AAAABABQAAAAHAAgAAAABAA0AAAAHAAkAAAAAABIAAAAHAAoAAAAAABUAAAAHAAsAAAAAABMAAAAHAAwAAAAAAA8AAAAHAA0AAAAHABIAAAA=")
+tile_set = ExtResource("4_tefeu")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="Back" unique_id=936671587]
+tile_map_data = PackedByteArray("AAABAAMAAQAAAAAAAQAGAAsAAQAAAAAAARAEAAEAAQAAAAAAAhA=")
+tile_set = ExtResource("4_tefeu")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1034488892]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1040653675]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="HBoxContainer" type="Control" parent="MarginContainer/VBoxContainer" unique_id=575396742]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=2085788885]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -17.5
+offset_top = -20.5
+offset_right = 17.5
+offset_bottom = 20.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_q3xpp")
+
+[node name="LevelHBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=975735947]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -13.5
+offset_top = -15.5
+offset_right = 15.5
+offset_bottom = -6.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 3
+
+[node name="CoinsLabel" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=609612536]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 26.0
+offset_right = 36.0
+offset_bottom = 41.0
+text = "10"
+horizontal_alignment = 2
+
+[node name="Panel" type="PanelContainer" parent="MarginContainer/VBoxContainer" unique_id=1244313268]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="MarginContainer/VBoxContainer/Panel" unique_id=1665134011]
+position = Vector2(33.9375, 38.0625)
+scale = Vector2(1.878906, 1.878906)
+sprite_frames = SubResource("SpriteFrames_q3xpp")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.5453281
+
+[node name="ClickButton" type="Button" parent="MarginContainer/VBoxContainer" unique_id=779072219]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Нажми"
+
+[node name="ShopButton" type="Button" parent="MarginContainer" unique_id=615344401]
+custom_minimum_size = Vector2(20, 21)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+theme_type_variation = &"ShopButton"
+
+[node name="PauseButton" type="Button" parent="MarginContainer" unique_id=956323794]
+custom_minimum_size = Vector2(20, 21)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_type_variation = &"MenuExitButton"
+
+[node name="Timer" type="Timer" parent="." unique_id=520396241]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer" parent="." unique_id=1587032269]
+stream = ExtResource("5_tbgi4")
+
+[connection signal="animation_finished" from="MarginContainer/VBoxContainer/Panel/AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/ClickButton" to="." method="_on_click_button_pressed"]
+[connection signal="pressed" from="MarginContainer/ShopButton" to="." method="_on_shop_button_pressed"]
+[connection signal="pressed" from="MarginContainer/PauseButton" to="." method="_on_pause_button_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

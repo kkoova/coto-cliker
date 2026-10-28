@@ -1,0 +1,387 @@
+[gd_scene format=3 uid="uid://dmmnobjt630ii"]
+
+[ext_resource type="Texture2D" uid="uid://dulyhav822i0u" path="res://assets/Sprite sheet for Basic Pack.png" id="1_sugp2"]
+[ext_resource type="FontFile" uid="uid://4sgk45dfov34" path="res://assets/ComicoroRu_0.ttf" id="2_jyhfs"]
+[ext_resource type="Script" uid="uid://cbthpvo54lx1e" path="res://scenes/main.gd" id="3_jyhfs"]
+[ext_resource type="Texture2D" uid="uid://c1snv3xn5o33a" path="res://assets/Teemo Basic emote animations sprite sheet.png" id="3_tbgi4"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tefeu"]
+load_path = "res://.godot/imported/Sprite sheet for Basic Pack.png-eabe7b01c3a789601ffb6404d896cf0e.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o6xl0"]
+atlas = SubResource("CompressedTexture2D_tefeu")
+region = Rect2(107, 155, 26, 26)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tipki"]
+texture = SubResource("AtlasTexture_o6xl0")
+texture_margin_left = 8.0
+texture_margin_top = 5.0
+texture_margin_right = 8.0
+texture_margin_bottom = 5.0
+region_rect = Rect2(0, 0, 26, 26)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_85g3d"]
+load_path = "res://.godot/imported/Sprite sheet for Basic Pack.png-eabe7b01c3a789601ffb6404d896cf0e.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_choun"]
+atlas = SubResource("CompressedTexture2D_85g3d")
+region = Rect2(59, 155, 26, 26)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_trceg"]
+texture = SubResource("AtlasTexture_choun")
+texture_margin_left = 5.0
+texture_margin_top = 7.0
+texture_margin_right = 5.0
+texture_margin_bottom = 5.0
+region_rect = Rect2(0, -2, 26, 28)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_sugp2"]
+load_path = "res://.godot/imported/Sprite sheet for Basic Pack.png-eabe7b01c3a789601ffb6404d896cf0e.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tbgi4"]
+atlas = SubResource("CompressedTexture2D_sugp2")
+region = Rect2(11, 107, 26, 28)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tefeu"]
+texture = SubResource("AtlasTexture_tbgi4")
+texture_margin_left = 10.0
+texture_margin_top = 5.0
+texture_margin_right = 10.0
+texture_margin_bottom = 7.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r7sum"]
+atlas = ExtResource("1_sugp2")
+region = Rect2(11, 155, 26, 28)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_q3xpp"]
+texture = SubResource("AtlasTexture_r7sum")
+texture_margin_left = 10.0
+texture_margin_top = 5.0
+texture_margin_right = 10.0
+texture_margin_bottom = 7.0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tbgi4"]
+load_path = "res://.godot/imported/Sprite sheet for Basic Pack.png-eabe7b01c3a789601ffb6404d896cf0e.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tefeu"]
+atlas = SubResource("CompressedTexture2D_tbgi4")
+region = Rect2(677, 70, 22, 22)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_o6xl0"]
+texture = SubResource("AtlasTexture_tefeu")
+region_rect = Rect2(0, -2, 22, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sugp2"]
+atlas = ExtResource("1_sugp2")
+region = Rect2(645, 68, 22, 24)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jyhfs"]
+texture = SubResource("AtlasTexture_sugp2")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1trbs"]
+atlas = ExtResource("1_sugp2")
+region = Rect2(201, 105, 30, 30)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_r7sum"]
+texture = SubResource("AtlasTexture_1trbs")
+texture_margin_left = 8.0
+texture_margin_top = 8.0
+texture_margin_right = 8.0
+texture_margin_bottom = 8.0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tipki"]
+load_path = "res://.godot/imported/Sprite sheet for Basic Pack.png-eabe7b01c3a789601ffb6404d896cf0e.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_85g3d"]
+atlas = SubResource("CompressedTexture2D_tipki")
+region = Rect2(805, 102, 22, 22)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_choun"]
+texture = SubResource("AtlasTexture_85g3d")
+region_rect = Rect2(0, -2, 22, 24)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_a8y0u"]
+texture = SubResource("AtlasTexture_85g3d")
+region_rect = Rect2(0, -2, 22, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jyhfs"]
+atlas = ExtResource("1_sugp2")
+region = Rect2(773, 100, 22, 24)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_sugp2"]
+texture = SubResource("AtlasTexture_jyhfs")
+
+[sub_resource type="Theme" id="Theme_q3xpp"]
+default_font = ExtResource("2_jyhfs")
+Button/styles/disabled = SubResource("StyleBoxTexture_tipki")
+Button/styles/focus = SubResource("StyleBoxTexture_trceg")
+Button/styles/hover = SubResource("StyleBoxTexture_tefeu")
+Button/styles/normal = SubResource("StyleBoxTexture_q3xpp")
+Button/styles/pressed = SubResource("StyleBoxTexture_trceg")
+MarginContainer/constants/margin_bottom = 5
+MarginContainer/constants/margin_left = 5
+MarginContainer/constants/margin_right = 5
+MarginContainer/constants/margin_top = 5
+MenuExitButton/base_type = &"Button"
+MenuExitButton/styles/focus = SubResource("StyleBoxTexture_o6xl0")
+MenuExitButton/styles/hover = SubResource("StyleBoxTexture_o6xl0")
+MenuExitButton/styles/normal = SubResource("StyleBoxTexture_jyhfs")
+MenuExitButton/styles/pressed = SubResource("StyleBoxTexture_o6xl0")
+PanelContainer/styles/panel = SubResource("StyleBoxTexture_r7sum")
+ShopButton/base_type = &"Button"
+ShopButton/styles/focus = SubResource("StyleBoxTexture_choun")
+ShopButton/styles/hover = SubResource("StyleBoxTexture_a8y0u")
+ShopButton/styles/normal = SubResource("StyleBoxTexture_sugp2")
+ShopButton/styles/pressed = SubResource("StyleBoxTexture_a8y0u")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q3xpp"]
+atlas = ExtResource("1_sugp2")
+region = Rect2(552, 131, 35, 41)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tipki"]
+atlas = ExtResource("3_tbgi4")
+region = Rect2(0, 192, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ya4ey"]
+atlas = ExtResource("3_tbgi4")
+region = Rect2(32, 192, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eb6dy"]
+atlas = ExtResource("3_tbgi4")
+region = Rect2(0, 224, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_trceg"]
+atlas = ExtResource("3_tbgi4")
+region = Rect2(32, 224, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a8y0u"]
+atlas = ExtResource("3_tbgi4")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jkv2x"]
+atlas = ExtResource("3_tbgi4")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jbj1t"]
+atlas = ExtResource("3_tbgi4")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_muem4"]
+atlas = ExtResource("3_tbgi4")
+region = Rect2(96, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dp3eg"]
+atlas = ExtResource("3_tbgi4")
+region = Rect2(128, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0ld40"]
+atlas = ExtResource("3_tbgi4")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gqmmt"]
+atlas = ExtResource("3_tbgi4")
+region = Rect2(32, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yc10j"]
+atlas = ExtResource("3_tbgi4")
+region = Rect2(64, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jscy8"]
+atlas = ExtResource("3_tbgi4")
+region = Rect2(96, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pm3ni"]
+atlas = ExtResource("3_tbgi4")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y6deb"]
+atlas = ExtResource("3_tbgi4")
+region = Rect2(0, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_og1vs"]
+atlas = ExtResource("3_tbgi4")
+region = Rect2(32, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2wyq8"]
+atlas = ExtResource("3_tbgi4")
+region = Rect2(0, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vxglm"]
+atlas = ExtResource("3_tbgi4")
+region = Rect2(32, 160, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_q3xpp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tipki")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ya4ey")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eb6dy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_trceg")
+}],
+"loop": 1,
+"name": &"happy",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a8y0u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jkv2x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jbj1t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_muem4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dp3eg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0ld40")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gqmmt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yc10j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jscy8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pm3ni")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pm3ni")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pm3ni")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y6deb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_og1vs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2wyq8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vxglm")
+}],
+"loop": 1,
+"name": &"love",
+"speed": 5.0
+}]
+
+[node name="Control" type="Control" unique_id=572347595 node_paths=PackedStringArray("coins_label")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_q3xpp")
+script = ExtResource("3_jyhfs")
+coins_label = NodePath("MarginContainer/VBoxContainer/HBoxContainer/CoinsLabel")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1846495618]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.8627451, 0.7254902, 0.5411765, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1034488892]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1040653675]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="HBoxContainer" type="Control" parent="MarginContainer/VBoxContainer" unique_id=575396742]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=2085788885]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -17.5
+offset_top = -20.5
+offset_right = 17.5
+offset_bottom = 20.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_q3xpp")
+
+[node name="CoinsLabel" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=609612536]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 26.0
+offset_right = 36.0
+offset_bottom = 41.0
+text = "10"
+horizontal_alignment = 2
+
+[node name="Panel" type="PanelContainer" parent="MarginContainer/VBoxContainer" unique_id=1244313268]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="MarginContainer/VBoxContainer/Panel" unique_id=1665134011]
+position = Vector2(20.5, 22.5)
+sprite_frames = SubResource("SpriteFrames_q3xpp")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.14993212
+
+[node name="ClickButton" type="Button" parent="MarginContainer/VBoxContainer" unique_id=779072219]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Нажми"
+
+[node name="Button" type="Button" parent="MarginContainer" unique_id=615344401]
+custom_minimum_size = Vector2(20, 21)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+theme_type_variation = &"ShopButton"
+
+[node name="Button2" type="Button" parent="MarginContainer" unique_id=956323794]
+custom_minimum_size = Vector2(20, 21)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_type_variation = &"MenuExitButton"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/ClickButton" to="." method="_on_click_button_pressed"]

@@ -1,0 +1,72 @@
+[gd_scene format=3 uid="uid://basocle5pxcli"]
+
+[ext_resource type="Texture2D" uid="uid://cbstj5o5sbytk" path="res://assets/bee_spritesheet.png" id="1_1q2x0"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vie5o"]
+atlas = ExtResource("1_1q2x0")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ogg2i"]
+atlas = ExtResource("1_1q2x0")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qf6nb"]
+atlas = ExtResource("1_1q2x0")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oynbf"]
+atlas = ExtResource("1_1q2x0")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nkr4b"]
+atlas = ExtResource("1_1q2x0")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kro73"]
+atlas = ExtResource("1_1q2x0")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qe60h"]
+atlas = ExtResource("1_1q2x0")
+region = Rect2(96, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yiyqc"]
+atlas = ExtResource("1_1q2x0")
+region = Rect2(112, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xfac4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vie5o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ogg2i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qf6nb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oynbf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nkr4b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kro73")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qe60h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yiyqc")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 7.0
+}]
+
+[node name="Bee" type="AnimatedSprite2D" unique_id=1413973862]
+sprite_frames = SubResource("SpriteFrames_xfac4")
+autoplay = "default"
+frame_progress = 0.49260625
