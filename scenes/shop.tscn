@@ -1,9 +1,9 @@
 [gd_scene format=4 uid="uid://dirjiqr451px0"]
 
 [ext_resource type="Theme" uid="uid://o8xmkolrgdpq" path="res://assets/theme.tres" id="1_lx5au"]
-[ext_resource type="Script" uid="uid://bi84jcop0htja" path="res://scripts/shop.gd" id="2_1l46r"]
-[ext_resource type="Texture2D" uid="uid://dulyhav822i0u" path="res://assets/Sprite sheet for Basic Pack.png" id="2_xfvoa"]
-[ext_resource type="TileSet" uid="uid://c7g4jxrh75e1i" path="res://assets/new_tile_set.tres" id="3_032fp"]
+[ext_resource type="Script" path="res://scripts/shop.gd" id="2_1l46r"]
+[ext_resource type="Texture2D" uid="uid://bd12kgk3ggijw" path="res://assets/Sprite.png" id="2_xfvoa"]
+[ext_resource type="TileSet" uid="uid://o8xmkolrgdpq" path="res://assets/theme.tres" id="3_032fp"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_1l46r"]
 load_path = "res://.godot/imported/Sprite sheet for Basic Pack.png-eabe7b01c3a789601ffb6404d896cf0e.ctex"
@@ -202,6 +202,7 @@ text = "250"
 icon = SubResource("AtlasTexture_r7sum")
 
 [node name="TreeUpdateHBoxContainer4" type="HBoxContainer" parent="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer" unique_id=692173149]
+visible = false
 layout_mode = 2
 
 [node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer/TreeUpdateHBoxContainer4" unique_id=837229292]
@@ -228,6 +229,7 @@ text = "250"
 icon = SubResource("AtlasTexture_r7sum")
 
 [node name="TreeUpdateHBoxContainer5" type="HBoxContainer" parent="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer" unique_id=1848846826]
+visible = false
 layout_mode = 2
 
 [node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer/TreeUpdateHBoxContainer5" unique_id=1118435817]
@@ -254,6 +256,7 @@ text = "250"
 icon = SubResource("AtlasTexture_r7sum")
 
 [node name="TreeUpdateHBoxContainer6" type="HBoxContainer" parent="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer" unique_id=872202924]
+visible = false
 layout_mode = 2
 
 [node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/ScrollContainer/ShopBuyVBoxContainer/TreeUpdateHBoxContainer6" unique_id=1470513330]

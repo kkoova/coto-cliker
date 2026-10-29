@@ -53,14 +53,12 @@ text = "Старт"
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-disabled = true
 text = "Сохранить"
 
 [node name="ContinueButton" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1280940802]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-disabled = true
 text = "Продолжить"
 
 [node name="ExitButton" type="Button" parent="MarginContainer/VBoxContainer" unique_id=610133688]
